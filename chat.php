@@ -105,7 +105,7 @@ if ( ! class_exists( 'Chat' ) ) {
 		 *
 		 * Plugin register actions, filters and hooks.
 		 */
-		function Chat() {
+		function __construct() {
 
 			// Activation deactivation hooks
 
