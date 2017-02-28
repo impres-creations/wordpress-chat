@@ -1863,7 +1863,7 @@ if ( ! class_exists( 'Chat' ) ) {
 		function wp_head() {
 			global $current_user, $post, $chat_localized;
 
-			get_currentuserinfo();
+			$current_user = wp_get_current_user();
 
 			if ( ! in_array( 'subscriber', $current_user->roles ) ) {
 				$vip = 'yes';
