@@ -2415,7 +2415,7 @@ if ( ! class_exists( 'Chat' ) ) {
 		 */
 		function process( $return = 'no' ) {
 			global $current_user;
-			get_currentuserinfo();
+			$current_user = wp_get_current_user();
 
 			$function = sanitize_key( $_POST['function'] );
 
